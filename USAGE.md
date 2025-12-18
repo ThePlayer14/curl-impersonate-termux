@@ -6,7 +6,7 @@ cmake -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_POSITION_INDEPENDENT_CODE=ON -
 in order to successfully compile curl-impersonate on Android. 
 If you try and force shoving down the statically compiled BoringSSL libraries, you will get "discouraged" by libtool first with the warning that the library is not portable, then full stop comes to the compilation.
 
-But even if you complete the compilation by the shared libraries, it'll try resolving them into the system's libraries. You can override this using the `LD_PRELOAD` trick, as I mentioned before.
+But even if you complete the compilation by the shared libraries, it'll try resolving them into the system's libraries. You can override this using the `LD_PRELOAD` trick.
 
 So to perform this, you'll need the BoringSSL libraries you've used during compilation then do 
 
